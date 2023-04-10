@@ -31,7 +31,7 @@ const Table = () => {
             }}
 
     return (
-        <div className='px-5 md:px-10 py-5 md:py-10'>
+        <div className='px-5 md:px-10 py-5 md:py-10 bg-white'>
          
             <div class="overflow-x-auto">
 
@@ -99,26 +99,22 @@ const Table = () => {
 
 export default Table;
 
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-ane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane55a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// ane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
