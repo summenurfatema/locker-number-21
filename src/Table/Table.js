@@ -101,8 +101,6 @@ export default Table;
 
 // awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
 // awabv6yzabne5u bane5  bn5u bane5  bnnn5a7sa nm46
-// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-//bv6abne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
-// awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
+// e5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
 // awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
 // awabv6yzabne5u bane5  bnnn5a7sa nm46 awabv6yzabne5u bane5  bnnn5a7sa nm46
