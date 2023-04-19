@@ -19,11 +19,13 @@ const Locker = () => {
         const form = e.target
         const userName = form.userName.value
         const firstName = form.firstName.value
+        const others= form.others.value
         const password = form.password.value
 
         const info = {
           userName,
           firstName,
+          others,
           password
         }
         console.log(info);
@@ -69,6 +71,18 @@ const Locker = () => {
                className='w-full h-10 md:h-20 pt-0 md:pt-3 px-2 text-lg md:text-xl border border-gray-200 
                rounded-md outline-none bg-white text-gray-900' 
                required />
+
+               <textarea  
+               type='text'
+               name='others'
+               placeholder="Others"    
+               className='w-full h-16 md:h-28 pt-0 md:pt-3 px-2 text-lg md:text-xl border border-gray-200 
+               rounded-md outline-none bg-white text-gray-900' 
+               required 
+               maxLength={150}>
+               </textarea>
+
+
               <div className='w-full relative'>
                <input  
                type={passwordType}

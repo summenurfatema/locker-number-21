@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import {FaTrash} from 'react-icons/fa'
 
+
 const Table = () => {
     const [datas, setDatas] = useState([])
+    const ref = React.createRef(); 
+    
+
     useEffect(() => {
         fetch('https://locker-server.vercel.app/all-data')
             .then(res => res.json())
@@ -29,11 +33,12 @@ const Table = () => {
                     }
                 })
             }}
-
+        
     return (
-        <div className='px-5 md:px-10 py-5 md:py-10 bg-white'>
-         
-            <div class="overflow-x-auto">
+     
+        <div className='px-5 md:px-10 first-line: py-5 md:py-10 bg-white' >
+        
+            <div class="overflow-x-auto" >
 
             {
         datas.length === 0 ?
@@ -46,7 +51,10 @@ const Table = () => {
 
 
         :
-  <table class="min-w-full divide-y-2 divide-gray-200 text-sm ">
+        <>
+        
+    
+  <table  class="divide-y-2 divide-gray-200 text-sm " ref={ref}>
     <thead>
       <tr>
         <th
@@ -67,6 +75,11 @@ const Table = () => {
         <th
           class="whitespace-nowrap text-base md:text-xl  px-4 py-2 text-left font-medium text-gray-900"
         >
+         Others
+        </th>
+        <th
+          class="whitespace-nowrap text-base md:text-xl  px-4 py-2 text-left font-medium text-gray-900"
+        >
          Password
         </th>
         <th
@@ -82,15 +95,18 @@ const Table = () => {
         datas.map((info,index)=>(
           <tr className='odd:bg-gray-50'>
             <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900'>{index+1}</td>
-            <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900'>{info.userName}</td>
-            <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900'>{info.firstName}</td>
-            <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900'>{info.password}</td>
+            <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900'>{info?.userName}</td>
+            <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900'>{info?.firstName}</td>
+            <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900 max-h-[10vh] overflow-y-auto'>{info?.others}</td>
+            <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-gray-900'>{info?.password}</td>
             <td className='text-base md:text-xl whitespace-nowrap px-4 py-2 text-left font-normal text-red-500 pl-10'><FaTrash onClick={()=>handleDelete(info)}/></td>
           </tr>
         ))
       }
     </tbody>
   </table>
+
+  </>
 }
 </div>
         </div>
