@@ -1,5 +1,5 @@
 # Locker Number 21 (a secret locker)
-9
+
 1
 2
 3
