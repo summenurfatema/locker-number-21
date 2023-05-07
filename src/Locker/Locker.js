@@ -138,17 +138,3 @@ const Locker = () => {
 };
 
 export default Locker;
-1
-
-
-
-
-
-
-
-
-
-
-
-
-
