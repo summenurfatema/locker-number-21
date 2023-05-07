@@ -14,39 +14,66 @@ const Locker = () => {
         setPasswordType("password")
       }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const form = e.target
-        const userName = form.userName.value
-        const firstName = form.firstName.value
-        const others= form.others.value
-        const password = form.password.value
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const form = e.target
+    //     const userName = form.userName.value
+    //     const firstName = form.firstName.value
+    //     const others= form.others.value
+    //     const password = form.password.value
 
-        const info = {
-          userName,
-          firstName,
-          others,
-          password
-        }
-        console.log(info);
-        fetch("https://locker-server.vercel.app/post-data", {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(info),
+    //     const info = {
+    //       userName,
+    //       firstName,
+    //       others,
+    //       password
+    //     }
+    //     console.log(info);
+    //     fetch("https://locker-server.vercel.app/post-data", {
+    //       method: "POST",
+    //       headers: {
+    //         "content-type": "application/json",
+    //       },
+    //       body: JSON.stringify(info),
+    //     })
+    //       .then((res) => res.json())
+    //       .then((data) => {
+    //         if (data.acknowledged) {
+    //           toast.success(`Your data is saved successfully`);
+    //          form.reset('')
+    //         } else {
+    //           toast.error("Error");
+    //         }
+    //       })
+    //       .catch((err) => toast.error(err));
+    //   }
+    const [firstName,setFirstName]=useState('')
+    const [userName,setUserName]=useState('')
+    const [others,setOthers]=useState('')
+    const [password,setPassword]=useState('')
+    
+
+ 
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const url = 'https://script.google.com/macros/s/AKfycbzlngB9mxYNpeCKhinvGKKV1caidcnRxbVX1u4DG9ggIInaB7_TZ-8gGB9Qd_WkbCZ3/exec';
+      console.log(formData)
+      fetch(url, {
+        method: 'POST',
+        body: formData, 
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setFirstName('')
+          setOthers('')
+          setPassword('')
+          setUserName('')
+          toast.success("Your information is submitted successfully")
+          
         })
-          .then((res) => res.json())
-          .then((data) => {
-            if (data.acknowledged) {
-              toast.success(`Your data is saved successfully`);
-             form.reset('')
-            } else {
-              toast.error("Error");
-            }
-          })
-          .catch((err) => toast.error(err));
-      }
+        .catch((err) => console.log(err));
+    };
     
       
 
@@ -58,7 +85,8 @@ const Locker = () => {
               
                 <input  
                type='text'
-               name='userName'
+               value={userName} onChange={(e) => setUserName(e.target.value)}
+               name='UserName'
                placeholder="Username"    
                className='w-full h-10 md:h-20 pt-0 md:pt-3 px-2 text-lg md:text-xl border border-gray-200 
                rounded-md outline-none bg-white text-gray-900' 
@@ -66,7 +94,8 @@ const Locker = () => {
 
                <input  
                type='text'
-               name='firstName'
+               value={firstName} onChange={(e) => setFirstName(e.target.value)}
+               name='FirstName'
                placeholder="First name"    
                className='w-full h-10 md:h-20 pt-0 md:pt-3 px-2 text-lg md:text-xl border border-gray-200 
                rounded-md outline-none bg-white text-gray-900' 
@@ -74,7 +103,8 @@ const Locker = () => {
 
                <textarea  
                type='text'
-               name='others'
+               value={others} onChange={(e) => setOthers(e.target.value)}
+               name='Others'
                placeholder="Others"    
                className='w-full h-16 md:h-28 pt-0 md:pt-3 px-2 text-lg md:text-xl border border-gray-200 
                rounded-md outline-none bg-white text-gray-900' 
@@ -86,7 +116,8 @@ const Locker = () => {
               <div className='w-full relative'>
                <input  
                type={passwordType}
-               name='password' 
+               value={password} onChange={(e) => setPassword(e.target.value)}
+               name='Password' 
                placeholder='Password'
                className='w-full h-10 md:h-16 px-2 text-lg md:text-xl border border-gray-200 rounded-md 
                outline-none bg-white text-gray-900 mb-3' 
@@ -107,3 +138,19 @@ const Locker = () => {
 };
 
 export default Locker;
+1
+2
+3
+4
+5
+6
+76
+8
+9
+1
+2
+3
+4
+5
+6
+7
